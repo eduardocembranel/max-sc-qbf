@@ -25,7 +25,7 @@ def solve(maxscqbf: MAXSCQBF, timeLimitSec=600):
     )
 
     # constraints to guaranty the consistency between the variables x[i] and y[i, j]
-    # x[i, j] = 1 if and only if both x[i] = 1 and x[y] = 1
+    # y[i, j] = 1 if and only if both x[i] = 1 and x[j] = 1
     for i in range(maxscqbf.n):
         for j in range(maxscqbf.n):
             if j >= i:
@@ -49,7 +49,7 @@ def solve(maxscqbf: MAXSCQBF, timeLimitSec=600):
         print("Best UB:", round(model.ObjBound, 4))
         print(f"Gap: {round(model.MIPGap * 100, 4)}%")
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     maxscqbf = readInstance()
     try:
         solve(maxscqbf)
