@@ -4,7 +4,7 @@ pip install -r requirements.txt
 
 ### Rodando o solver PLI
 
-python maxscqbf_ilp.py < teste3.txt
+python maxscqbf_ilp.py < intances/exact_n25.txt
 
 ### Para gerar a instância de teste
 
