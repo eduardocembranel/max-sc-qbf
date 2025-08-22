@@ -17,7 +17,7 @@ class MAXSCQBF:
     # S[i][j] = 1 means the subset S[i] contains the variable j.
     # S[i][j] = 0 means the subjet S[i] does not contain the variable j. 
     S: List[List[int]]
-    # coefficient matrix A = (a_ij) of the QBF problem.
+    # coefficient matrix A = (a_ij) of the MAX-QBF problem.
     # A is an n x n matrix of real numbers representing the coefficients.
     A: List[List[float]]
 

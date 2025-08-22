@@ -49,6 +49,8 @@ def solve(maxscqbf: MAXSCQBF, timeLimitSec=600):
         print("Best UB:", round(model.ObjBound, 4))
         print(f"Gap: {round(model.MIPGap * 100, 4)}%")
 
+    print(f"Runtime: {model.Runtime:.2f} seconds")
+
 if __name__ == "__main__":
     maxscqbf = readInstance()
     try:
