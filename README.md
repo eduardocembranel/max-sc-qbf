@@ -52,7 +52,7 @@ As instâncias de testes localizadas do diretório `instances` foram geradas com
 ```bash
 python maxscqbf_generator.py
 ````
-> A reexecução do comando acima irá gerar os mesmos 15 arquivos já presentes em `instantes`, uma vez que o gerador faz uso de uma seed pré definida.
+> A reexecução do comando acima irá gerar os mesmos 15 arquivos já presentes em `instances`, uma vez que o gerador faz uso de uma seed pré definida.
 
 ## Caso desejar executar o algoritmo de força bruta
 
